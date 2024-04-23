@@ -13,42 +13,42 @@ const Testimonials  = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
-            </p>
-
-            <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            />
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              Participar do <Mark>bootcamp</Mark>
+              de League of Legends em Seul foi surreal. A Viagens.gg cuidou de tudo para que eu pudesse focar no jogo. Uma experiência que vou levar para a vida toda!
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Carlos Meireles"
+              title="Gamer e Influenciador Digital"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve seen. I
-              would use this for anything.
+              Nunca pensei que assistir a um <Mark>Major de CS:GO</Mark>
+              ao vivo pudesse ser tão emocionante. A Viagens.gg me proporcionou um pacote completo com acesso VIP e foi incrível!
+            </p>
+
+            <Avatar
+              image={userOneImg}
+              name="Ana Júlia Ribeiro"
+              title="Competidora de E-Sports"
+            />
+          </div>
+        </div>
+        <div className="">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+            <p className="text-2xl leading-normal ">
+            Viajar com a Viagens.gg para assistir às <Mark>finais do CBLoL</Mark>
+            foi a melhor decisão! Conheci outros fãs apaixonados e vivi momentos que só um verdadeiro gamer entenderia. 
             </p>
 
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              name="João Souza"
+              title="Desenvolvedor de Jogos"
             />
           </div>
         </div>

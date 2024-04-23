@@ -35,22 +35,32 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Como são selecionados os eventos de e-sports inclusos nos pacotes?",
+    answer: "Escolhemos os eventos mais emocionantes e significativos do mundo dos e-sports, garantindo acesso a competições que todo fã sonha em assistir.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Os pacotes de viagem incluem treinamento ou interação com jogadores profissionais?",
+    answer: "Sim, oferecemos pacotes exclusivos que incluem sessões de treinamento e oportunidades de conhecer seus ídolos do e-sports.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "Qual é a política de cancelamento e reembolso?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Entendemos que planos podem mudar. Nossa política de cancelamento é flexível e está desenhada para dar a você a tranquilidade que precisa.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Existem opções de personalização para os pacotes de viagem? ",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Totalmente personalizável! Nossos pacotes podem ser ajustados para atender às suas preferências e sonhos de viagem.",
+  },
+  {
+    question: "Como funciona o suporte durante a viagem? ",
+    answer:
+      "Nossa equipe de suporte está disponível 24/7 para garantir que sua experiência de viagem seja tranquila e sem preocupações.",
+  },
+  {
+    question: "Há benefícios para grupos ou comunidades que viajam juntos? ",
+    answer:
+      "Com certeza! Oferecemos tarifas especiais e benefícios para grupos que querem compartilhar a emoção dos e-sports juntos.",
   },
 ];
 

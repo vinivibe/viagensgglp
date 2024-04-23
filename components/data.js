@@ -11,50 +11,29 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Por que escolher Viagens.gg?",
+  desc: "Viajar é mais do que se deslocar de um lugar para outro, é mergulhar em novas experiências. Na Viagens.gg, transformamos cada viagem em uma aventura de e-sports inesquecível. Descubra por que somos a escolha número um dos gamers viajantes.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Entenda seus Clientes",
+      desc: "Criamos experiências personalizadas que refletem sua paixão e o conectam com o universo dos e-sports de forma única.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Aprimore a Aquisição",
+      desc: "Oferecemos pacotes exclusivos que combinam a emoção dos jogos com o prazer de viajar, aumentando a satisfação e a fidelidade do cliente.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Impulsione a Retenção de Clientes",
+      desc: "Nossos clientes retornam para novas aventuras, graças às memórias inesquecíveis e ao atendimento excepcional que proporcionamos.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
-const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
-  bullets: [
-    {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
-    },
-    {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
-    },
-  ],
-};
 
 
-export {benefitOne, benefitTwo};
+
+export {benefitOne};
