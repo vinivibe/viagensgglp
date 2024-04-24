@@ -27,6 +27,7 @@ export default function Forms() {
 
   const formStyle = {
     backgroundColor: 'white',
+    margin:22,
     display: 'flex',
     flexDirection: 'column',
     maxWidth: '500px',
@@ -82,8 +83,8 @@ export default function Forms() {
 
       <label style={labelStyle} htmlFor="campeonatos">Quais Campeonatos você tem Interesse?</label>
       <select style={inputStyle} id="campeonatos" name="campeonatos" required>
-        <option value="cblol">CBLOL - 1°SPLIT - PLAYOFFS E FINAIS</option>
-        <option value="cblolsegundosplit">CBLOL 2°SPLIT</option>
+        <option value="cblol">Lorem Ipsum is simply </option>
+        <option value="cblolsegundosplit">Lorem Ipsum is simply</option>
       </select>
 
       <label style={labelStyle} htmlFor="ingressoCBLOL">Já tem ingresso para a arena CBLOL?</label>
