@@ -48,7 +48,7 @@ export default function Forms() {
     backgroundSize: 'cover', 
     backgroundPosition: 'center',
     height: '900px', 
-    display: 'flex',
+    
 }
 
   const labelStyle = {

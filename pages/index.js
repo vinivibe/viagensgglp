@@ -24,13 +24,13 @@ const Home = () => {
       </Head>
 
       <Navbar />
-      {/* <Hero /> */}
-      <Forms />
-      {/* <SectionTitle
+      <Hero />
+      
+      <SectionTitle
         pretitle="Vantagens Exclusivas da Viagens.gg"
         title=" Por que escolher Viagens.gg?">
         A Viagens.gg redefine o conceito de viajar com serviços que vão além do convencional. Entendemos o espírito gamer e personalizamos cada aspecto da sua viagem para garantir que cada momento seja épico. Da reserva ao retorno, sua satisfação é nossa missão principal.
-      </SectionTitle> */}
+      </SectionTitle>
       <Benefits data={benefitOne} />
       <SectionTitle
         pretitle="Assista ao Vídeo e Inspire-se"
@@ -38,6 +38,7 @@ const Home = () => {
         Veja como cada viagem se transforma em uma aventura épica! Este espaço é dedicado a apresentar um vislumbre das experiências inigualáveis que oferecemos. Portanto, mergulhe nesta experiência interativa e veja o que torna a Viagens.gg única. Aventure-se com a gente.
       </SectionTitle>
       <Video />
+      <Forms />
       <SectionTitle
         pretitle="Depoimentos"
         title="O que os Viajantes da Viagens.gg Dizem">

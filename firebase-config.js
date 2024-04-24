@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore"; // Certifique-se de que esta 
 
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDgJQNppEQ8dqREXtJHUYr0g7GrTsXkTHE",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "viagensgg-af670.firebaseapp.com",
   projectId: "viagensgg-af670",
   storageBucket: "viagensgg-af670.appspot.com",

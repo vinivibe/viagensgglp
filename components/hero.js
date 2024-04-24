@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/banner.png";
+import heroImgTwo from '../public/img/gaming.png.webp'
 
 const Hero = () => {
   return (
@@ -18,7 +19,6 @@ const Hero = () => {
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="#form"
-                target="_blank"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-[#EC2468] rounded-md ">
                 Inicie essa aventura
@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
             <Image
-              src={heroImg}
+              src={heroImgTwo}
               width="616"
               height="617"
               className={"object-cover"}
