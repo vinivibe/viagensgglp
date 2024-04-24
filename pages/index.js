@@ -24,13 +24,13 @@ const Home = () => {
       </Head>
 
       <Navbar />
-      <Hero />
-      {/* <Forms /> */}
-      <SectionTitle
+      {/* <Hero /> */}
+      <Forms />
+      {/* <SectionTitle
         pretitle="Vantagens Exclusivas da Viagens.gg"
         title=" Por que escolher Viagens.gg?">
         A Viagens.gg redefine o conceito de viajar com serviços que vão além do convencional. Entendemos o espírito gamer e personalizamos cada aspecto da sua viagem para garantir que cada momento seja épico. Da reserva ao retorno, sua satisfação é nossa missão principal.
-      </SectionTitle>
+      </SectionTitle> */}
       <Benefits data={benefitOne} />
       <SectionTitle
         pretitle="Assista ao Vídeo e Inspire-se"
