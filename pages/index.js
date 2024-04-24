@@ -25,7 +25,7 @@ const Home = () => {
 
       <Navbar />
       <Hero />
-      <Forms />
+      {/* <Forms /> */}
       <SectionTitle
         pretitle="Vantagens Exclusivas da Viagens.gg"
         title=" Por que escolher Viagens.gg?">
