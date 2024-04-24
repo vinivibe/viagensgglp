@@ -25,6 +25,7 @@ const Home = () => {
 
       <Navbar />
       <Hero />
+      <Forms />
       <SectionTitle
         pretitle="Vantagens Exclusivas da Viagens.gg"
         title=" Por que escolher Viagens.gg?">
@@ -47,7 +48,6 @@ const Home = () => {
         Tem perguntas? Nós temos as respostas que ajudarão a preparar sua próxima viagem para o mundo dos e-sports!
       </SectionTitle>
       <Faq />
-      <Forms />
       <Cta />
     </>
   );

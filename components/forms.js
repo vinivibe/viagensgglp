@@ -10,7 +10,7 @@ export default function Forms() {
         formData.forEach((value, key) => (data[key] = value));
     
         try {
-          const response = await fetch('https://script.google.com/macros/s/AKfycbyfCqUqrMT6reD8e6s4ne5xzkyYK1f6ucMdF-aNJ2W7jQLA8j4Hqgb7vVcDpTnvv1sPcw/exec', {
+          const response = await fetch('https://jobo-back-3aaqwrrqp.vercel.app/api/submit-form', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
