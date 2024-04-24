@@ -9,6 +9,7 @@ import Benefits from "../components/benefits";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
+import Forms from '../components/forms'
 
 const Home = () => {
   return (
@@ -46,6 +47,7 @@ const Home = () => {
         Tem perguntas? Nós temos as respostas que ajudarão a preparar sua próxima viagem para o mundo dos e-sports!
       </SectionTitle>
       <Faq />
+      <Forms />
       <Cta />
     </>
   );
