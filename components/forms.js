@@ -1,29 +1,32 @@
 import React from 'react';
+import { db } from '../firebase-config';
+import { collection, addDoc } from "firebase/firestore";
 
 export default function Forms() {
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        const form = event.target;
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
+
+    try {
+      const docRef = await addDoc(collection(db, "leads"), {
+        name: data.nomeCompleto,
+        nascimento:data.dataNascimento ,
+        email: data.email,
+        telefone: data.telefone,
+        campeonatos: data.campeonatos,
+        ingressos: data.ingressoCBLOL,
+        experiencia: data.experiencia,
+        autorizacaoContato: data.autorizacaoContato,
+      });
     
-        const formData = new FormData(form);
-        const data = {};
-        formData.forEach((value, key) => (data[key] = value));
-    
-        try {
-          const response = await fetch('https://jobo-back-3aaqwrrqp.vercel.app/api/submit-form', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          });
-          const result = await response.json();
-          console.log(result);
-          // Adicione aqui o que fazer depois que os dados são enviados com sucesso.
-        } catch (error) {
-          console.error('Erro ao enviar formulário:', error);
-        }
-      };
+      
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
 
   const formStyle = {
     backgroundColor: 'white',
@@ -35,14 +38,16 @@ export default function Forms() {
     padding: '20px',
     border: '1px solid #ddd',
     borderRadius: '8px',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+    height: '850px',
   };
 
   const backgroundForms = {
     backgroundImage: `url("/img/worlds_2023.webp")`, 
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover', 
-    backgroundPosition: 'center', 
+    backgroundPosition: 'center',
+    height: '900px' 
 }
 
   const labelStyle = {
@@ -61,7 +66,7 @@ export default function Forms() {
     padding: '10px 15px',
     border: 'none',
     borderRadius: '4px',
-    backgroundColor: '#007BFF',
+    backgroundColor: '#EC2468',
     color: 'white',
     cursor: 'pointer',
   };
@@ -99,7 +104,6 @@ export default function Forms() {
         <option value="opcao2">Um dia: Passagem Aérea + Hotel + Ingresso</option>
         <option value="opcao3">Final de Semana Gods: Passagem Aérea + Hotel + Transfer + Tour pelo Office de um dos times do CBLOL + WatchParty CBLOL no Login XP Bar</option>
         <option value="opcao4">Outro</option>
-
       </select>
 
       <label style={labelStyle} htmlFor="autorizacaoContato">Autoriza nossa Equipe a entrar em contato com você?</label>
