@@ -26,6 +26,7 @@ export default function Forms() {
       };
 
   const formStyle = {
+    backgroundColor: 'white',
     display: 'flex',
     flexDirection: 'column',
     maxWidth: '500px',
@@ -35,6 +36,13 @@ export default function Forms() {
     borderRadius: '8px',
     boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
   };
+
+  const backgroundForms = {
+    backgroundImage: `url("/img/worlds_2023.webp")`, 
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover', 
+    backgroundPosition: 'center', 
+}
 
   const labelStyle = {
     marginBottom: '5px',
@@ -58,6 +66,7 @@ export default function Forms() {
   };
 
   return (
+    <div style={backgroundForms}>
     <form id='form' onSubmit={handleSubmit} style={formStyle}>
       <label style={labelStyle} htmlFor="nomeCompleto">Nome completo:</label>
       <input style={inputStyle} type="text" id="nomeCompleto" name="nomeCompleto" required />
@@ -73,8 +82,8 @@ export default function Forms() {
 
       <label style={labelStyle} htmlFor="campeonatos">Quais Campeonatos você tem Interesse?</label>
       <select style={inputStyle} id="campeonatos" name="campeonatos" required>
-        <option value="cblol">CBLOL</option>
-        <option value="major">Major</option>
+        <option value="cblol">CBLOL - 1°SPLIT - PLAYOFFS E FINAIS</option>
+        <option value="cblolsegundosplit">CBLOL 2°SPLIT</option>
       </select>
 
       <label style={labelStyle} htmlFor="ingressoCBLOL">Já tem ingresso para a arena CBLOL?</label>
@@ -85,8 +94,11 @@ export default function Forms() {
 
       <label style={labelStyle} htmlFor="experiencia">Qual dessas experiências mais faz sentido pra você?</label>
       <select style={inputStyle} id="experiencia" name="experiencia" required>
-        <option value="opcao1">Opção 1</option>
-        <option value="opcao2">Opção 2</option>
+        <option value="opcao1">Um dia: Passagem Aérea + Hotel</option>
+        <option value="opcao2">Um dia: Passagem Aérea + Hotel + Ingresso</option>
+        <option value="opcao3">Final de Semana Gods: Passagem Aérea + Hotel + Transfer + Tour pelo Office de um dos times do CBLOL + WatchParty CBLOL no Login XP Bar</option>
+        <option value="opcao4">Outro</option>
+
       </select>
 
       <label style={labelStyle} htmlFor="autorizacaoContato">Autoriza nossa Equipe a entrar em contato com você?</label>
@@ -97,6 +109,7 @@ export default function Forms() {
 
       <button style={buttonStyle} type="submit">Enviar</button>
     </form>
+    </div>
   );
 }
 
