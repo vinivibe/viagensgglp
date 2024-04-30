@@ -24,8 +24,7 @@ const Home = () => {
       </Head>
 
       <Navbar />
-      <Forms />
-      {/* <Hero /> */}
+      <Hero />
       
       <SectionTitle
         pretitle="Vantagens Exclusivas da Viagens.gg"
@@ -39,7 +38,7 @@ const Home = () => {
         Veja como cada viagem se transforma em uma aventura épica! Este espaço é dedicado a apresentar um vislumbre das experiências inigualáveis que oferecemos. Portanto, mergulhe nesta experiência interativa e veja o que torna a Viagens.gg única. Aventure-se com a gente.
       </SectionTitle>
       <Video />
-      
+      <Forms />
       <SectionTitle
         pretitle="Depoimentos"
         title="O que os Viajantes da Viagens.gg Dizem">

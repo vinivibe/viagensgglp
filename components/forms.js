@@ -33,6 +33,7 @@ export default function Forms() {
     margin:22,
     display: 'flex',
     flexDirection: 'column',
+    minWidth: '430px',
     maxWidth: '500px',
     margin: '20px auto',
     padding: '20px',
@@ -43,7 +44,7 @@ export default function Forms() {
   };
 
   const backgroundForms = {
-    backgroundImage: `url("/img/worlds_2023.webp")`, 
+    backgroundImage: `url("/img/bannerforms.png")`, 
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover', 
     backgroundPosition: 'center',

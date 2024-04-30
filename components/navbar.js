@@ -17,8 +17,8 @@ const Navbar = () => {
       <Image
                         src="/img/viagensgg1.png"
                         alt="N"
-                        width="300"
-                        height="300"
+                        width="200"
+                        height="200"
                         className="w-18"
                       />
         <Disclosure>
